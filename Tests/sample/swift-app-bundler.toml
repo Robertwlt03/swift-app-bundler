@@ -1,0 +1,14 @@
+# The sample app the tests bundle: an app, a widget, two languages, an icon and a guide.
+name = "Sample App"
+product = "SampleApp"
+icon = "icon.png"
+
+[[extensions]]
+product = "SampleWidget"
+info_plist = "Widget/Info.plist"
+entitlements = "Widget/Widget.entitlements"
+id_suffix = ".widget"
+texts = ["Widget.strings"]
+
+[release]
+extra = { Guide = "docs/guide" }

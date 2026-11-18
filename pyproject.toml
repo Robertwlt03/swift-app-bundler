@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swift-app-bundler"
+version = "0.1.0"
+description = "Turns a Swift package into a signed macOS app and disk image, with a self-signed identity and optional notarization."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Robert Walter" }]
+requires-python = ">=3.13"
+dependencies = ["console-look @ git+https://github.com/Robertwlt03/console-look@v0.1.0"]
+classifiers = [
+    "Environment :: Console",
+    "Environment :: MacOS X",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Build Tools",
+]
+
+[project.urls]
+Repository = "https://github.com/Robertwlt03/swift-app-bundler"
+
+[project.scripts]
+swift-app-bundler = "swift_app_bundler.__main__:main"

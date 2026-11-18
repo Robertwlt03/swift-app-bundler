@@ -1,0 +1,19 @@
+# The checks of swift-app-bundler itself, with check-pipeline; CI runs the same ones on a Mac.
+name = "swift-app-bundler"
+steps = [
+    "tests", "secrets", "security", "duplicates", "nesting", "guides", "files", "deadscripts",
+    "scripts", "english", "language", "commits",
+]
+
+[files]
+python_scripts = ["src/**/*.py", "Tests/*.py"]
+
+[scripts]
+head = "Start:"
+
+[language]
+terms = ["macos", "appex", "dmg", "plist", "iconset", "notarize", "notarized", "keychain", "cls"]
+
+[commands.tests]
+title = "Unit tests and a real build (unittest)"
+command = ["python3", "-m", "unittest", "discover", "-s", "Tests"]

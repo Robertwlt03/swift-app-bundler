@@ -1,0 +1,4 @@
+{"kind": "flow", "items": [
+  {"glyph": "lock", "title": "identity", "text": "Once per Mac: a signing identity of your own."},
+  {"glyph": "hammer", "title": "build", "text": "The signed app in build/, to run and test."},
+  {"glyph": "download", "title": "release", "text": "The signed disk image in dist/, notarized if possible."}]}

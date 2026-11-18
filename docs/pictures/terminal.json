@@ -1,0 +1,4 @@
+{"kind": "terminal", "title": "my-app — zsh", "label": "swift-app-bundler build compiles, puts the app together, draws the icon, adds the widget and signs both",
+ "lines": [["command", "swift-app-bundler build"], ["result", "✔ Compiled  release"],
+  ["result", "✔ Put together  the identifier from Info.plist"], ["result", "✔ Icon drawn  5 sizes, each also for Retina"],
+  ["result", "✔ Extension added  com.example.app.widget"], ["result", "✔ Signed  My App.app, My App Dev"]]}

@@ -1,0 +1,7 @@
+{"kind": "grid", "columns": 3, "items": [
+  {"glyph": "hammer", "title": "No Xcode project", "text": "A Swift package and one settings file become a real Mac app."},
+  {"glyph": "widget", "title": "Extensions", "text": "Widgets and other extensions go into PlugIns with the app's identifier and version."},
+  {"glyph": "globe", "title": "Translations and icon", "text": "Every .lproj folder, and an icon in all sizes from one picture or one command."},
+  {"glyph": "lock", "title": "Permissions that stay", "text": "A self-signed identity keeps Full Disk Access and other grants across rebuilds."},
+  {"glyph": "download", "title": "Disk image", "text": "The app, a link to Applications and your guide, signed, in dist/."},
+  {"glyph": "shield", "title": "Notarized", "text": "With a Developer ID and a notary profile, macOS opens it without a warning."}]}
