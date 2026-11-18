@@ -115,7 +115,9 @@ class BuildTests(Folder):
 
     def test_missing_parts_are_named_without_a_traceback(self) -> None:
         broken = self.folder.parent / "broken"
-        shutil.copytree(self.folder, broken, symlinks=True)
+        # Without .build: a copied module cache points at the old folder, which Swift refuses.
+        shutil.copytree(self.folder, broken, symlinks=True,
+                        ignore=shutil.ignore_patterns(".build", "build", "dist"))
         settings = broken / "swift-app-bundler.toml"
         here = Path.cwd()
         os.chdir(broken)
